@@ -6,6 +6,7 @@
     --> Binary Search Algoritmasi : https://www.geeksforgeeks.org/python-program-for-binary-search/
     --> Random Sayi Uretimi : https://stackoverflow.com/questions/22842289/generate-n-unique-random-numbers-within-a-range
     --> Time Fonksiyonu Kullanimi : https://www.studytonight.com/post/calculate-time-taken-by-a-program-to-execute-in-python
+    --> Sort Fonksiyonu Kullanimi : https://www.geeksforgeeks.org/sort-in-python/
 
     --> Binary Search Nedir? : https://medium.com/@tugrulbayrak/search-arama-algoritmalari-binary-linear-5260431ba9a3
     --> Big O Notasyonu Nedir? : https://medium.com/kodcular/nedir-bu-big-o-notation-b8b9f1416d30
@@ -41,9 +42,9 @@ def binary_arama(dizi, alt, ust, sayi):
         return -1
 
 dizi = []
-for x in range (0,100): # Bu dongude 100 elemanlik icindeki degerler 0-100 sayilari arasindan rastgele secilen bir dizi olusturuyoruz.
+for x in range (0,100): # Bu dongude 100 elemanlik, icindeki degerler 0-100 sayilari arasindan rastgele secilen bir dizi olusturuyoruz.
     dizi.append(random.randint(0,100)) # random() fonksiyonu yardimiyla olusturdugumuz her sayiyi dizimize append ediyoruz(ekliyoruz).
-dizi.sort() # binary search algoritmasi mantigina gore dizi elemanlari kucukten buyuge dogru sirali olmasi gerektiginden dizideki elemanlarimizi sort() fonksiyonu yardimiyla siraliyoruz.
+dizi.sort() # Binary Search algoritmasi mantigina gore dizi elemanlari kucukten buyuge dogru sirali olmasi gerektiginden dizideki elemanlarimizi sort() fonksiyonu yardimiyla siraliyoruz.
 
 sayi = 16
 sonuc = binary_arama(dizi, 0, len(dizi) - 1, sayi) # binary_arama algoritmamizin dondurdugu sonucu 'sonuc' adli degiskende sakliyoruz.
